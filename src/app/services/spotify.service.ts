@@ -25,7 +25,7 @@ export class SpotifyService {
   getNewReleases(){
 
     // const headers = new HttpHeaders({
-    //   'Authorization': 'Bearer BQCOAfKL3ASL5-chagj2e2DiOV7lS6_lbAIsg8z5quFNg-2W-tqAwo1MrvbNVK6CYvAFOIn60rpzjts1HfY'
+    //   'Authorization': 'Bearer '
     // });
 
     return this.getQuery('browse/new-releases?limit=20')
@@ -43,7 +43,7 @@ export class SpotifyService {
   getArtistas(termino: string){
 
     // const headers = new HttpHeaders({
-    //   'Authorization': 'Bearer BQCOAfKL3ASL5-chagj2e2DiOV7lS6_lbAIsg8z5quFNg-2W-tqAwo1MrvbNVK6CYvAFOIn60rpzjts1HfY'
+    //   'Authorization': 'Bearer '
     // });
 
     return this.getQuery(`search?q=${termino}&type=artist&limit=15`)
